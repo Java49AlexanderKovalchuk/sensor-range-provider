@@ -34,8 +34,7 @@ class SensorTests {
 		Range actual = sensorService.getSensorRange(1);
 		System.out.println("range min :" + actual.minValue() + "range max: " + actual.maxValue());
 		assertEquals(expected, actual);
-		assertThrowsExactly(NotFoundException.class, 
-				() -> sensorService.getSensorRange(100));
+		assertThrowsExactly(NotFoundException.class, () -> sensorService.getSensorRange(100));
 	}
 
 }
