@@ -6,6 +6,7 @@ import java.util.stream.IntStream;
 import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import telran.sensor.dto.Range;
 import telran.sensor.dto.Sensor;
@@ -14,7 +15,6 @@ import telran.sensor.repo.SensorRepo;
 
 @Component
 @RequiredArgsConstructor
-@AllArgsConstructor
 public class DbTestCreation {
 	
 	final SensorRepo sensorRepo;
